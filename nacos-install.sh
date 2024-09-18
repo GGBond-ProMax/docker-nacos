@@ -37,7 +37,7 @@ fi
 chmod -R 777 $NACOS_DIR
 
 # 拉取Nacos镜像
-echo "正在拉去nacos镜像，镜像版本为 $NACOS_VERSION..."
+echo "正在拉取nacos镜像，镜像版本为 $NACOS_VERSION..."
 docker pull nacos/nacos-server:$NACOS_VERSION
 
 # 启动Nacos容器（暂时不挂载配置文件）
